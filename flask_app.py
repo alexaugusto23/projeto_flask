@@ -6,6 +6,6 @@ app = Flask(__name__)
 def inicio():
     return render_template('index.html')
 
-@app.route('inicio-alternativo')
+@app.route('/inicio-alternativo')
 def outro_inicio():
     return render_template('alternative_index.html')
