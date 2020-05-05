@@ -1,10 +1,26 @@
 // fazendo funcionar relogio
 var r = document.getElementById('relogio');
-var hoje = new Date();
-var h = hoje.getHours();
-var m = hoje.getMinutes();
-var s = hoje.getSeconds();
-r.textContent = h + ":" + m + ":" + s;
+function atualizaHora() {
+    var hoje = new Date();
+    var h = hoje.getHours();
+    var m = hoje.getMinutes();
+    var s = hoje.getSeconds();
+    if (h < 10)
+        h = '0' + h;
+    if (m < 10)
+        m = '0' + m;
+    if (s < 10)
+        s = '0' + s;
+    r.textContent = h + ":" + m + ":" + s;
+    
+}
+
+// tempo em milisegundos
+setInterval(atualizaHora, 1000);
+
+
+
+
 
 const raiz = document.getElementById('lista');
 /*
