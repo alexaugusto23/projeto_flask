@@ -12,14 +12,11 @@ function atualizaHora() {
     if (s < 10)
         s = '0' + s;
     r.textContent = h + ":" + m + ":" + s;
-    
-}
 
+}
+// No Chrome usar Crtl + Shift + R
 // tempo em milisegundos
 setInterval(atualizaHora, 1000);
-
-
-
 
 
 const raiz = document.getElementById('lista');
