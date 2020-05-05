@@ -1,3 +1,11 @@
+// fazendo funcionar relogio
+var r = document.getElementById('relogio');
+var hoje = new Date();
+var h = hoje.getHours();
+var m = hoje.getMinutes();
+var s = hoje.getSeconds();
+r.textContent = h + ":" + m + ":" + s;
+
 const raiz = document.getElementById('lista');
 /*
 var xhr = new XMLHttpRequest();
