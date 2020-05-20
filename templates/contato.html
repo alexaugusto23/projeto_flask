@@ -1,0 +1,22 @@
+{% extends '_base.html' %}
+  {% block title %}
+  Contato
+  {% endblock title %}
+    
+    {% block estilos %}
+      <link rel="stylesheet" type="text/css" href="/static/css/estilos.css">
+    {% endblock estilos %}
+
+      {% block content %}
+      <center>  
+        <h1 class = "mt-5 text-light">Contato Conosco</h1>
+      </center>
+
+      <!-- <a class = "btn btn-success" href="index"> Voltar ao inicio</a> -->
+      <a class = "btn btn-primary" href="{{url_for('mostra_inicio')}}"> Voltar ao inicio</a>
+
+      {% endblock content %}
+
+      {% block scripts %}
+      <script src="/static/js/script.js"></script>
+      {% endblock scripts %}
